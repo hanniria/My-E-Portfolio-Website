@@ -111,7 +111,6 @@ header {
   transform: scale(1.1); 
 }
 
-
 .btn {
   padding: 15px 30px;
   background-color: #6b2431;
@@ -147,8 +146,7 @@ header {
   object-position: center;
 }
 
-
-#about{
+#about {
   background-color: #6b2431;
   color: white;
 }
@@ -203,6 +201,7 @@ header {
   transition: background-color 0.3s, transform 0.3s;
 }
 
+
 .skills {
   padding: 100px 50px;
   text-align: center;
@@ -254,12 +253,6 @@ header {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   border-color: #b10928;
-}
-
-.about-text .btn:hover {
-  background-color: #ffffff;
-  color: black;
-  transform: scale(1.1);
 }
 
 
@@ -368,21 +361,93 @@ header {
 
 .contact-info i {
   margin-right: 10px;
-  color: #6b2431;
-}
-
-.contact-info li i {
-  font-size: 1.5rem;
 }
 
 
-footer{
-  color: white;
+footer {
   background-color: #5E202B;
-
+  color: white;
+  padding: 30px 50px;
+  text-align: center;
 }
 
-footer p{
+footer a {
+  color: white;
+  text-decoration: none;
+}
 
-margin-left: 40%;
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 100px 20px;
+  }
+
+  .hero-left {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .hero-right {
+    margin-left: 0;
+  }
+
+  .hero-right .profile-img-wrapper {
+    width: 80%;
+    height: 350px;
+    margin-left: 10%;
+  }
+
+   .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+    display: none; 
+  }
+
+  .nav-links.active {
+    display: flex; 
+  }
+
+  .nav-links li a {
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #000;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .skills-container, .project-list {
+    flex-direction: column;
+  }
+
+  .skill-item, .project-item {
+    width: 90%;
+    margin: 10px auto;
+  }
 }
