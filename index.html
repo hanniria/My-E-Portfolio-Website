@@ -3,42 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Louizza Pajarillon Portfolio</title>
-  <link rel="stylesheet" href="portfolio.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <title>Portfolio</title>
 </head>
 <body>
-  <nav class="navbar">
-      <h1 class="logo">Louizza <span>Pajarillon</span></h1>
+  <header>
+    <div class="logo">Louizza <span>Pajarillon</span></div>
+    <nav class="navbar">
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-    <i class="fas fa-bars menu-icon"></i>
-  </nav>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
 
   <main>
-    <section class="hero">
+    <section id="hero" class="hero">
       <div class="hero-left">
         <h1>Hey, I'm <span>Ria</span></h1>
-        <h2>I'm a <span class="highlight">multimedia editor</span></h2>
+        <h2>I'm a <span class="highlight">Multimedia Editor</span></h2>
         <p>I have a passion for turning ideas into visually stunning realities.</p>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/hanniria"><i class="fab fa-github"></i></a>
+          <a href="https://web.facebook.com/iza.briones.75"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/ria_alzz/"><i class="fab fa-instagram"></i></a>
         </div>
         <a href="#" class="btn">View Projects</a>
       </div>
       <div class="hero-right">
         <div class="profile-img-wrapper">
-          <img src="ria.png" alt="Profile Image">
+          <img src="hanni.png" alt="Ria's Profile Picture">
         </div>
       </div>
     </section>
+
+    <!-- ABOUT PAGE -->
+    <section id="about" class="about">
+        <div class="about-content">
+          <div class="about-image">
+            <img src="SMILE.jpg" alt="About Ria">
+          </div>
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+              Hi! I'm Ria, I am a dedicated second-year student with a passion for multimedia editing and storytelling. 
+              I specialize in video editing, sound design, and visual effects, with experience using industry-standard 
+              software like Adobe Premiere Pro, After Effects, and Photoshop. My work focuses on transforming raw footage 
+              into compelling narratives, whether for promotional videos, short films, or digital content. I am committed 
+              to delivering creative, high-quality multimedia projects and look forward to collaborating on innovative 
+              ideas in the digital space.
+            </p>
+            <a href="#contact" class="btn">Contact Me</a>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+          <div class="skill-item">
+            <i class="fas fa-video"></i>
+            <h3>Video Editing</h3>
+            <p>Experienced in transforming raw footage into captivating visual stories. I specialize in crafting smooth transitions, 
+                enhancing colors, and adding creative effects to bring out the best in every video. Whether it's for promotional content, 
+                short films, or social media, I focus on delivering high-quality, engaging videos tailored to the audience and purpose.</p>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Graphic Design</h3>
+            <p>Skilled in creating visually striking designs that communicate ideas effectively. I specialize in crafting logos, branding 
+                materials, and promotional graphics, ensuring every design aligns with the brand's identity. With a keen eye for detail, 
+                I focus on color theory, typography, and composition to produce professional, eye-catching visuals.</p>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-camera"></i>
+            <h3>Animation</h3>
+            <p>Experienced in bringing static designs to life through animation, creating dynamic and engaging visuals that capture attention. 
+                I specialize in 2D and motion graphics, using creative storytelling techniques to convey messages clearly and effectively. 
+                I focus on smooth transitions, timing, and fluid motion to enhance the viewer's experience and communicate ideas in a compelling way.</p>
+          </div>
+        </div>
+      </section>
+      
+      
+
+      <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+          <div class="project-item">
+            <img src="ENROLL.jpg" alt="Project 1">
+            <h3>Enrollment Form</h3>
+            <p>An online enrollment form allows users to easily register for courses, services, or events by providing their personal information through a simple, user-friendly interface.</p>
+            <a href="https://hanniria.github.io/Pajarillon_EnrollmentForm/" class="btn">View Project</a>
+          </div>
+          <div class="project-item">
+            <img src="PORTFOLIO.jpg" alt="Project 2">
+            <h3>E Portfolio</h3>
+            <p>An e-portfolio website showcases an individual's skills, work samples, achievements, and professional experiences in a digital format, serving as an interactive resume for potential employers or clients</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+          <div class="project-item">
+            <img src="ANIMATION.jpg" alt="Project 3">
+            <h3>Restoration</h3>
+            <p>Photo restoration animation involves bringing old or damaged photographs back to life by digitally repairing and enhancing them, often incorporating animated effects to add depth and movement.</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+      </section>
+      
+
+      <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+          <ul>
+            <li><i class="fab fa-github"></i><a href="https://github.com/hanniria" target="_blank">GitHub</a></li>
+            <li><i class="fab fa-facebook"></i><a href="https://web.facebook.com/iza.briones.75" target="_blank">Facebook5</a></li>
+            <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/ria_alzz/" target="_blank">Instagram</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="pajarillonlouizza@gmail.com">Email</a></li>
+            <li><i class="fas fa-phone-alt"></i> 09162457052</li>
+          </ul>
+        </div>
+      </section>
+      
+    </main>
+    <footer>
+        <p>&copy; 2024 Ria Pajarillon. All rights reserved.</p>
+      </footer>
+    </body>
+    </html>
+    
+  
+      
   </main>
 </body>
 </html>
